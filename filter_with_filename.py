@@ -20,12 +20,12 @@ def make_result_img(arr, height_1, width_1, steps):
             j = j + width_1
         i = i + height_1
 
-name_of_img = input('Name of Image: ')
+name_of_img = "img2.jpg"
 img = Image.open(name_of_img)
 arr = np.array(img, dtype='int64')
-height = input('Height: ')
-width = input('Width: ')
-steps_number = int(input('Number of steps : '))
+height = 15
+width = 15
+steps_number = 5
 make_result_img(arr, int(height), int(width), steps_number)
 arr = arr.astype(np.uint8)
 res = Image.fromarray(arr)
